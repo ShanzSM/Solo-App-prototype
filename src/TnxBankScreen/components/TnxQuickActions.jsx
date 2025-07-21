@@ -7,7 +7,7 @@ const actions = [
 ];
 
 const TnxQuickActions = () => (
-  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 24 }}>
+  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 23 }}>
     {actions.map((action) => (
       <div key={action.label} style={{
         background: '#f5f7fa',
