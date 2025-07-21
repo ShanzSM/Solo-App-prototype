@@ -1,12 +1,12 @@
-import billpayments from '../assets/billpayments.png';
-import mobilereload from '../assets/mobilereload.png';
-import directpay from '../assets/directpay.png';
-import dealscoupons from '../assets/deals&coupons.png';
-import loyaltyrewards from '../assets/loyalty&rewards.png';
-import cashtomobile from '../assets/cashtomobile.png';
-import splitpay from '../assets/splitpay.png';
-import gifting from '../assets/gifting.png';
-import invitefriends from '../assets/invitefriends.png';
+import billpayments from '../../assets/billpayments.png';
+import mobilereload from '../../assets/mobilereload.png';
+import directpay from '../../assets/directpay.png';
+import dealscoupons from '../../assets/deals&coupons.png';
+import loyaltyrewards from '../../assets/loyalty&rewards.png';
+import cashtomobile from '../../assets/cashtomobile.png';
+import splitpay from '../../assets/splitpay.png';
+import gifting from '../../assets/gifting.png';
+import invitefriends from '../../assets/invitefriends.png';
 import React from 'react';
 
 const services = [
@@ -30,16 +30,27 @@ export default function SoloServiceGrid() {
             src={service.icon}
             alt={service.name}
             style={{
-              width: 44,
-              height: 44,
-              marginBottom: 8,
+              width: 58,
+              height: 58,
+              marginBottom: 10,
               objectFit: 'contain',
               background: '#f5f7fa',
               borderRadius: '50%',
-              padding: 6
+              padding: 8
             }}
           />
-          <span style={{ fontSize: 13, color: '#222', textAlign: 'center', fontWeight: 500, width: '100%', display: 'block' }}>{service.name}</span>
+          <span style={{
+            fontSize: 14,
+            color: '#222',
+            textAlign: 'center',
+            fontWeight: 500,
+            width: '100%',
+            display: 'block',
+            lineHeight: 1.2,
+            wordBreak: 'break-word',
+            whiteSpace: 'normal',
+            maxWidth: 80
+          }}>{service.name}</span>
         </div>
       ))}
     </div>
